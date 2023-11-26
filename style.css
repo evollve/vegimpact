@@ -1,0 +1,26 @@
+.section {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+#chickens { background-color: lightyellow; }
+#pigs { background-color: lightpink; }
+#cows { background-color: lightblue; }
+#fish { background-color: lightgreen; }
+
+.circle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.circle {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    border-radius: 50%;
+    display: inline-block;
+}
