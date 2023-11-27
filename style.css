@@ -1,13 +1,58 @@
-.section {
-    width: 100%;
-    padding: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
     text-align: center;
+    background-color: #f0f4f7;
+    color: #34568B;
 }
 
-#chickens { background-color: lightyellow; }
-#pigs { background-color: lightpink; }
-#cows { background-color: lightblue; }
-#fish { background-color: lightgreen; }
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #FFA07A;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+.section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+#chickens { background-color: #fffdd0; }
+#pigs { background-color: #ffccd5; }
+#cows { background-color: #fff; }
+#fish { background-color: #87ceeb; }
 
 .circle-container {
     display: flex;
@@ -17,10 +62,50 @@
     padding: 10px;
 }
 
-.circle {
-    height: 20px;
-    width: 20px;
+.animal-symbol {
+    font-size: 60px;
     margin: 5px;
-    border-radius: 50%;
     display: inline-block;
+}
+
+.facts {
+    display: none;
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-style: italic;
+}
+
+.positive-fact {
+    color: #4CAF50;
+}
+
+.negative-fact {
+    color: #d32f2f;
+}
+
+.email-subscription {
+    background-color: #eceff1;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.email-subscription input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.email-subscription button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

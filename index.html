@@ -1,28 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan Impact Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 <body>
     <div class="container">
-        <h1>Vegan Impact Calculator</h1>
+        <h1>Discover Your Positive Impact on the Planet</h1>
+        <p>Enter the number of years you've been embracing a vegan lifestyle and unveil the significant difference you've made!</p>
         <label for="years">Enter number of years you've been vegan:</label>
         <input type="number" id="years" min="0" placeholder="Years as vegan">
-        <button onclick="calculateImpact()">Calculate</button>
-
-        <div class="section" id="chickens">
-            <h2>Chickens</h2>
-            <div class="circle-container" id="chickenCircles"></div>
-        </div>
-
-        <div class="section" id="pigs">
-            <h2>Pigs</h2>
-            <div class="circle-container" id="pigCircles"></div>
-        </div>
+        <button onclick="calculateImpact()"><i class="fa fa-leaf"></i> See Your Vegan Impact</button>
 
         <div class="section" id="cows">
-            <h2>Cows</h2>
+            <h2>Cows <span id="cowCount"></span></h2>
             <div class="circle-container" id="cowCircles"></div>
+            <div class="facts" id="cowFacts">
+                <p class="positive-fact">Cows have strong familial bonds and are known for their intelligence and curiosity.</p>
+                <p class="negative-fact">In factory farms, cows often live in cramped conditions, leading to physical and emotional distress.</p>
+            </div>
+        </div>
+
+        <!-- Repeat for Pigs, Fish, and Chickens -->
+
+        <div class="section" id="pigs">
+            <h2>Pigs <span id="pigCount"></span></h2>
+            <div class="circle-container" id="pigCircles"></div>
+            <div class="facts" id="pigFacts">
+                <p class="positive-fact">Pigs are highly social and intelligent animals, often displaying playfulness and joy.</p>
+                <p class="negative-fact">Factory farming of pigs involves overcrowded living conditions and often inhumane treatment.</p>
+            </div>
         </div>
 
         <div class="section" id="fish">
-            <h2>Fish</h2>
+            <h2>Fish <span id="fishCount"></span></h2>
             <div class="circle-container" id="fishCircles"></div>
+            <div class="facts" id="fishFacts">
+                <p class="positive-fact">Many fish species show complex social structures and can form strong bonds.</p>
+                <p class="negative-fact">Commercial fishing practices often lead to overfishing and significant harm to marine ecosystems.</p>
+            </div>
+        </div>
+
+        
+        <div class="section" id="chickens">
+            <h2>Chickens <span id="chickenCount"></span></h2>
+            <div class="circle-container" id="chickenCircles"></div>
+            <div class="facts" id="chickenFacts">
+                <p class="positive-fact">Chickens are known for their strong maternal instincts and can recognize over 100 faces.</p>
+                <p class="negative-fact">In many poultry farms, chickens are kept in confined spaces, affecting their well-being.</p>
+            </div>
+        </div>
+        
+
+        <div class="email-subscription">
+            <h3>Stay Updated with Our Newsletter</h3>
+            <input type="email" id="email" placeholder="Enter your email">
+            <button onclick="subscribe()">Subscribe</button>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
+</html>
