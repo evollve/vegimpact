@@ -1,9 +1,9 @@
 To Do:
 -Color scheme
 -Sharing links
+-Email sign-up
 -Domain
 -Hosting
--Email sign-up
 -Notes about average per year and country specific nature of answer being widely diverse...using US info primarily?
 -Auto-generated name under every animal...female:male names randomly assigned based on % of animal usage in factory farming
 -Facts - positive about animal type

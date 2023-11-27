@@ -10,56 +10,56 @@
 </head>
 <body>
     <div class="container">
-        <h1>Discover Your Positive Impact on the Planet</h1>
+        <h1>The Power of Vegan Living</h1>
         <p>Enter the number of years you've been embracing a vegan lifestyle and unveil the significant difference you've made!</p>
         <label for="years">Enter number of years you've been vegan:</label>
         <input type="number" id="years" min="0" placeholder="Years as vegan">
-        <button onclick="calculateImpact()"><i class="fa fa-leaf"></i> See Your Vegan Impact</button>
+        <button onclick="calculateImpact()"><i class="fa fa-leaf"></i> See Your Impact</button>
 
+        <!-- Cow Section -->
         <div class="section" id="cows">
-            <h2>Cows <span id="cowCount"></span></h2>
+            <h2>Cows: <span id="cowCount"></span></h2>
             <div class="circle-container" id="cowCircles"></div>
             <div class="facts" id="cowFacts">
-                <p class="positive-fact">Cows have strong familial bonds and are known for their intelligence and curiosity.</p>
-                <p class="negative-fact">In factory farms, cows often live in cramped conditions, leading to physical and emotional distress.</p>
+                <p class="positive-fact">Cows have strong social bonds, often forming close friendships and displaying emotions through vocalizations.</p>
+                <p class="negative-fact">In industrial farming, cows endure confined spaces, with dairy cows repeatedly impregnated and separated from their calves.</p>
             </div>
         </div>
 
-        <!-- Repeat for Pigs, Fish, and Chickens -->
-
+        <!-- Pig Section -->
         <div class="section" id="pigs">
-            <h2>Pigs <span id="pigCount"></span></h2>
+            <h2>Pigs: <span id="pigCount"></span></h2>
             <div class="circle-container" id="pigCircles"></div>
             <div class="facts" id="pigFacts">
-                <p class="positive-fact">Pigs are highly social and intelligent animals, often displaying playfulness and joy.</p>
-                <p class="negative-fact">Factory farming of pigs involves overcrowded living conditions and often inhumane treatment.</p>
+                <p class="positive-fact">Pigs are intelligent and curious animals, with cognitive abilities similar to dogs and young children.</p>
+                <p class="negative-fact">Factory farming subjects pigs to overcrowding and stress, with little room for natural behaviors and social interaction.</p>
             </div>
         </div>
 
+        <!-- Fish Section -->
         <div class="section" id="fish">
-            <h2>Fish <span id="fishCount"></span></h2>
+            <h2>Fish: <span id="fishCount"></span></h2>
             <div class="circle-container" id="fishCircles"></div>
             <div class="facts" id="fishFacts">
-                <p class="positive-fact">Many fish species show complex social structures and can form strong bonds.</p>
-                <p class="negative-fact">Commercial fishing practices often lead to overfishing and significant harm to marine ecosystems.</p>
+                <p class="positive-fact">Many fish exhibit complex social structures, showing cooperation, and some species use tools to gather food.</p>
+                <p class="negative-fact">Industrial fishing practices lead to overfishing, disrupting marine ecosystems and causing harm to fish populations.</p>
             </div>
         </div>
 
-        
+        <!-- Chicken Section -->
         <div class="section" id="chickens">
-            <h2>Chickens <span id="chickenCount"></span></h2>
+            <h2>Chickens: <span id="chickenCount"></span></h2>
             <div class="circle-container" id="chickenCircles"></div>
             <div class="facts" id="chickenFacts">
-                <p class="positive-fact">Chickens are known for their strong maternal instincts and can recognize over 100 faces.</p>
-                <p class="negative-fact">In many poultry farms, chickens are kept in confined spaces, affecting their well-being.</p>
+                <p class="positive-fact">Chickens are social birds with a complex range of vocalizations, used to communicate within the flock.</p>
+                <p class="negative-fact">In many factory farms, chickens are kept in tightly packed conditions, impacting their health and welfare.</p>
             </div>
         </div>
         
-
         <div class="email-subscription">
             <h3>Stay Updated with Our Newsletter</h3>
             <input type="email" id="email" placeholder="Enter your email">
-            <button onclick="subscribe()">Subscribe</button>
+            <button onclick="subscribe()"><i class="fa fa-envelope"></i> Subscribe</button>
         </div>
     </div>
 
