@@ -10,15 +10,17 @@
 </head>
 <body>
     <div class="container">
-        <h1>The Power of Vegan Living</h1>
+        <h1>The Power of <span class="highlight">Vegan</span> Living</h1>
         <p>Enter the number of years you've been embracing a vegan lifestyle and unveil the significant difference you've made!</p>
         <label for="years">Enter number of years you've been vegan:</label>
-        <input type="number" id="years" min="0" placeholder="Years as vegan">
+        <input type="number" id="years" min="0" max="100" placeholder="Years as vegan">
+<span id="error-message" style="color: red; display: none;">Please enter a valid number of years (0-100).</span>
+
         <button onclick="calculateImpact()"><i class="fa fa-leaf"></i> See Your Impact</button>
 
         <!-- Cow Section -->
         <div class="section" id="cows">
-            <h2>Cows: <span id="cowCount"></span></h2>
+            <h2>Cows <span id="cowCount"></span></h2>
             <div class="circle-container" id="cowCircles"></div>
             <div class="facts" id="cowFacts">
                 <p class="positive-fact">Cows have strong social bonds, often forming close friendships and displaying emotions through vocalizations.</p>
@@ -28,7 +30,7 @@
 
         <!-- Pig Section -->
         <div class="section" id="pigs">
-            <h2>Pigs: <span id="pigCount"></span></h2>
+            <h2>Pigs <span id="pigCount"></span></h2>
             <div class="circle-container" id="pigCircles"></div>
             <div class="facts" id="pigFacts">
                 <p class="positive-fact">Pigs are intelligent and curious animals, with cognitive abilities similar to dogs and young children.</p>
@@ -38,7 +40,7 @@
 
         <!-- Fish Section -->
         <div class="section" id="fish">
-            <h2>Fish: <span id="fishCount"></span></h2>
+            <h2>Fish <span id="fishCount"></span></h2>
             <div class="circle-container" id="fishCircles"></div>
             <div class="facts" id="fishFacts">
                 <p class="positive-fact">Many fish exhibit complex social structures, showing cooperation, and some species use tools to gather food.</p>
@@ -48,7 +50,7 @@
 
         <!-- Chicken Section -->
         <div class="section" id="chickens">
-            <h2>Chickens: <span id="chickenCount"></span></h2>
+            <h2>Chickens <span id="chickenCount"></span></h2>
             <div class="circle-container" id="chickenCircles"></div>
             <div class="facts" id="chickenFacts">
                 <p class="positive-fact">Chickens are social birds with a complex range of vocalizations, used to communicate within the flock.</p>

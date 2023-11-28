@@ -4,7 +4,8 @@ body {
     font-family: 'Lato', sans-serif;
     text-align: center;
     background-color: #f0f4f7;
-    color: #34568B;
+    color: #000;
+    color: #2E294E;
 }
 
 .container {
@@ -16,7 +17,8 @@ body {
 h1 {
     font-size: 2.5em;
     font-weight: 700;
-    color: #FFA07A;
+    color: #000;
+    color: #2E294E;
 }
 
 button {
@@ -30,7 +32,7 @@ button {
     display: inline-flex;
     align-items: center;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 button i {
@@ -81,13 +83,14 @@ button:hover {
 }
 
 .positive-fact {
-    color: #388e3c; /* Darker green for positive facts */
+    color: #4CAF50; /* Darker green for positive facts */
     margin-bottom: 10px;
     font-weight: bold;
 }
 
 .negative-fact {
-    color: #d32f2f; /* Dark red for negative facts */
+    color: #d32f2f;
+    color: #DE6461; /* Dark red for negative facts */
     font-weight: bold;
 }
 
@@ -113,8 +116,23 @@ button:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 0px;
 }
 
 .email-subscription button:hover {
     background-color: #3e8e41;
+}
+
+.highlight {
+    color: #4CAF50; /* The specific shade of green */
+}
+
+
+.container input[type="number"] {
+    width: 120px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 10px;
 }

@@ -10,6 +10,18 @@ function displayCircles(containerId, count, animalSymbol) {
 }
 
 function calculateImpact() {
+
+    const yearsInput = document.getElementById('years');
+    const yearsVegan = yearsInput.value;
+    const errorMessage = document.getElementById('error-message');
+
+    if (!yearsVegan || yearsVegan < 0 || yearsVegan > 100 || !Number.isInteger(Number(yearsVegan))) {
+        errorMessage.style.display = 'block';
+        return;
+    } else {
+        errorMessage.style.display = 'none';
+    }
+    
     const yearsVegan = document.getElementById('years').value;
     if (!yearsVegan || yearsVegan < 0 || !Number.isInteger(Number(yearsVegan))) {
         alert('Please enter a valid number of years.');
