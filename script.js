@@ -10,7 +10,6 @@ function displayCircles(containerId, count, animalSymbol) {
 }
 
 function calculateImpact() {
-
     const yearsInput = document.getElementById('years');
     const yearsVegan = yearsInput.value;
     const errorMessage = document.getElementById('error-message');
@@ -20,12 +19,6 @@ function calculateImpact() {
         return;
     } else {
         errorMessage.style.display = 'none';
-    }
-    
-    const yearsVegan = document.getElementById('years').value;
-    if (!yearsVegan || yearsVegan < 0 || !Number.isInteger(Number(yearsVegan))) {
-        alert('Please enter a valid number of years.');
-        return;
     }
 
     const avgChickenWeight = 6 * 0.75; // 75% of 6 pounds
@@ -38,12 +31,18 @@ function calculateImpact() {
     const cowsPerYear = 58.8 / avgCowWeight;
     const fishPerYear = 20.5 / avgFishWeight;
 
-    // Update counts and display circles
     updateAnimalCountAndDisplay('chicken', Math.round(yearsVegan * chickensPerYear), '🐔');
     updateAnimalCountAndDisplay('pig', Math.round(yearsVegan * pigsPerYear), '🐖');
     updateAnimalCountAndDisplay('cow', Math.round(yearsVegan * cowsPerYear), '🐄');
     updateAnimalCountAndDisplay('fish', Math.round(yearsVegan * fishPerYear), '🐟');
 }
+
+function updateAnimalCountAndDisplay(animal, count, symbol) {
+    document.getElementById(animal + 'Count').innerText = count;
+    document.getElementById(animal + 'Facts').style.display = 'block';
+    displayCircles(animal + 'Circles', count, symbol);
+}
+
 
 function updateAnimalCountAndDisplay(animal, count, symbol) {
     document.getElementById(animal + 'Count').innerText = count;
