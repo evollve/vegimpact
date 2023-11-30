@@ -43,13 +43,6 @@ function updateAnimalCountAndDisplay(animal, count, symbol) {
     displayCircles(animal + 'Circles', count, symbol);
 }
 
-
-function updateAnimalCountAndDisplay(animal, count, symbol) {
-    document.getElementById(animal + 'Count').innerText = count;
-    document.getElementById(animal + 'Facts').style.display = 'block';
-    displayCircles(animal + 'Circles', count, symbol);
-}
-
 function subscribe() {
     const email = document.getElementById('email').value;
     alert('Thank you for subscribing: ' + email);
