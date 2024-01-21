@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    background-color: #f0f4f7;
+    color: #000;
+    color: #2E294E;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #000;
+    color: #2E294E;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+.section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+#chickens { background-color: #fffdd0; }
+#pigs { background-color: #ffccd5; }
+#cows { background-color: #fff; }
+#fish { background-color: #87ceeb; }
+
+.circle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.animal-symbol {
+    font-size: 60px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.facts {
+    display: none; /* Initially hidden */
+    background-color: #f2f2f2; /* Light grey background */
+    border-left: 5px solid #4CAF50; /* Green border for emphasis */
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    font-style: normal;
+}
+
+.positive-fact {
+    color: #4CAF50; /* Darker green for positive facts */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.negative-fact {
+    color: #d32f2f;
+    color: #DE6461; /* Dark red for negative facts */
+    font-weight: bold;
+}
+
+.email-subscription {
+    background-color: #eceff1;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.email-subscription input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.email-subscription button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 0px;
+}
+
+.email-subscription button:hover {
+    background-color: #3e8e41;
+}
+
+.highlight {
+    color: #4CAF50; /* The specific shade of green */
+}
+
+.container input[type="number"] {
+    width: 120px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #f0f0f0; /* Light grey background */
+}
+
+footer .disclaimer, footer .copyright {
+    margin: 5px 0;
+}

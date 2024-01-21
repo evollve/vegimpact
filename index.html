@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan Impact Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>The Power of <span class="highlight">Vegan</span> Living</h1>
+        <p>Enter the number of years you've been embracing a vegan lifestyle and unveil the significant difference you've made!</p>
+        <label for="years">Enter number of years you've been vegan:</label>
+        <input type="number" id="years" min="0" max="100" placeholder="Years as vegan">
+<span id="error-message" style="color: red; display: none;">Please enter a valid number of years (0-100).</span>
+
+        <button onclick="calculateImpact()"><i class="fa fa-leaf"></i> See Your Impact</button>
+
+        <!-- Cow Section -->
+        <div class="section" id="cows">
+            <h2>Cows <span id="cowCount"></span></h2>
+            <div class="circle-container" id="cowCircles"></div>
+            <div class="facts" id="cowFacts">
+                <p class="positive-fact">Cows are known for their nurturing nature, often forming maternal bonds and protecting their young with deep affection.</p>
+                <p class="negative-fact">In commercial dairy farming, cows are subjected to constant milking, leading to physical strain and emotional distress due to calf separation.</p>
+            </div>
+        </div>
+
+        <!-- Pig Section -->
+        <div class="section" id="pigs">
+            <h2>Pigs <span id="pigCount"></span></h2>
+            <div class="circle-container" id="pigCircles"></div>
+            <div class="facts" id="pigFacts">
+                <p class="positive-fact">Pigs display remarkable intelligence and emotional depth, engaging in playful activities and showing empathy within their social groups.</p>
+                <p class="negative-fact">In intensive pig farming, these intelligent creatures face severe confinement, denying them the opportunity to engage in natural foraging and social behaviors.</p>
+            </div>
+        </div>
+
+        <!-- Fish Section -->
+        <div class="section" id="fish">
+            <h2>Fish <span id="fishCount"></span></h2>
+            <div class="circle-container" id="fishCircles"></div>
+            <div class="facts" id="fishFacts">
+                <p class="positive-fact">Fish are capable of forming long-term memories, recognize other individual fish, and even engage in collaborative hunting strategies.</p>
+                <p class="negative-fact">Commercial fishing methods, such as trawling and long-lining, not only deplete fish stocks but also cause significant suffering and stress to aquatic life.</p>
+            </div>
+        </div>
+
+        <!-- Chicken Section -->
+        <div class="section" id="chickens">
+            <h2>Chickens <span id="chickenCount"></span></h2>
+            <div class="circle-container" id="chickenCircles"></div>
+            <div class="facts" id="chickenFacts">
+                <p class="positive-fact">Chickens are known for their strong family ties, demonstrating complex social behaviors and caring for their chicks with great attention.</p>
+                <p class="negative-fact">Battery cages in poultry farms severely restrict movement, leading to physical ailments and psychological distress for the chickens.</p>
+            </div>
+        </div>
+        
+        <!-- <div class="email-subscription">
+            <h3>Stay Updated with Our Newsletter</h3>
+            <input type="email" id="email" placeholder="Enter your email">
+            <button onclick="subscribe()"><i class="fa fa-envelope"></i> Subscribe</button>
+        </div> -->
+
+        <footer>
+            <p class="disclaimer">
+                Data on this site is for informational purposes and based on estimates, primarily from US data. Actual impacts may vary and differ greatly by country.
+            </p>
+            <p class="copyright">
+                Copyright © 2023 VegImpact 
+            </p>
+        </footer>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
